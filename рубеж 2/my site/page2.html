@@ -113,12 +113,14 @@ var photos=new Array()
 var photoslink=new Array()
 var which=0
 
-photos[0]="N-rs1.jpg"
-photos[1]="N-rs2.jpg"
-photos[2]="N-rs3.jpg"
-photos[3]="N-rs4.jpg"
-photos[4]="N-rs5.jpg"
-photos[5]="N-rs5.jpg"
+photos[0]="schitchik2.jpg"
+photos[1]="schitchik3.jpg"
+photos[2]="schitchik4.jpg"
+photos[3]="schitchik5.jpg"
+photos[4]="schitchik6.jpg"
+photos[5]="schitchik7.jpg"
+photos[6]="schitchik8.jpg"
+
 
 var linkornot=0
 
@@ -128,6 +130,9 @@ photoslink[2]=""
 photoslink[3]=""
 photoslink[4]=""
 photoslink[5]=""
+photoslink[6]=""
+
+
 
 
 var preloadedimages=new Array()
@@ -212,15 +217,13 @@ function vv()
 2)В результате построения 4-х разрядного двоичного счетчика на компьютерной модели "TINA" будем ожидать получение таблицы состояний счетчика и соответствующие преобразованние
 его двоичного числа в 7-сигментное изображение десятичного эквивалента.<br> <br>
 <font face="comic sans ms" size=+1 color=blue><b>
-Q(t) - состояние триггера до поступления управляющих сигналов (изменения на входах R и S);<br> 
-Q(t+1) - состояние триггера после изменения на входах R и S.<br> 
 <center>
-<IMG SRC="table-rs.jpg" ALIGN="center"><br><br>
+<IMG SRC="schitchik1.jpg" width=70% ALIGN="center"><br><br>
 </font>
-3)Воспользуемся компьютерной моделью "TINA", которая поможет наглядно проиллюстрировать работу асинхронного RS-триггера<br>
+3)Воспользуемся компьютерной моделью "TINA", которая поможет наглядно проиллюстрировать работу 4-х разрядного двоичного счетчика импульсов<br>
 <center>
 <font face="comic sans ms" size=+3 color=purple><b>
-Этапы построения асинхронного RS-триггера:<br>
+Этапы построения счетчика на Т-триггерах:<br>
 <font face="comic sans ms" size=+1 color=blue>
 (листайте слайды)</font>
 <table border="0" cellspacing="0" cellpadding="0" align=center>
@@ -250,7 +253,7 @@ document.write('</a>')
 <font face="comic sans ms" size=+3 color=purple><b>
 <hr color=red>
 Теперь разберем непосредственно<br>
-работу асинхронного RS-триггера:<br>
+работу 4-х разрядного двоичного счетчика импульсов<br>
 
 <table align=center>
 <td valign=top>
@@ -273,151 +276,6 @@ document.write('</a>')
 </table>
 
    
-<center>
-<font face="comic sans ms" size=+3 color=darkblue><b>
-<u>В задаче №1 пункта b) главное:</u><center>
-<font face="comic sans ms" size=+3 color=red><b> 
-Проверить работу синхронного RS-триггера на логических элементах "И-НЕ"
-<br>
-<center>
-<font face="comic sans ms" size=+3
- color=darkblue><b> 
-
-<a href="javascript: vv7()" > 
-Синхронный RS-триггер (доп.окно)</a> на логических элементах И-НЕ<br><br>
-<font face="comic sans ms" size=+2 color=darkblue><b> 
-
-<IMG SRC="rsc-nand.jpg" width="400" ALIGN="center"><br>
-<font face="comic sans ms" size=+3 color=blue><b>
-<center>
-ИТАК для решения задачи №1 пункта b) будем придерживаться следующего плана:<br>
-<p align=left>
-<font face="comic sans ms" size=+3 color=darkblue>
-1)Для понимания работы триггера вспомним 
-<a href="javascript: vv4()" > 
-таблицу истинности И-НЕ (доп.окно)</a><br>  
-2)В результате построения триггера в Tina ожидаем получить таблицу состояний триггера.<br> 
-<font face="comic sans ms" size=+1 color=blue><b><br>
-Q(t) - состояние триггера до поступления управляющих сигналов (изменения на входах R и S);<br> 
-Q(t+1) - состояние триггера после изменения на входах R и S.<br> 
-<center>
-</font>
-<IMG SRC="table-rsc.jpg" ALIGN="center"><br>
-3)Воспользуемся компьютерной моделью "TINA", которая поможет наглядно проиллюстрировать работу синхронного RS-триггера<br>
-<center>
-<font face="comic sans ms" size=+3 color=purple><b>
-Этапы построения синхронного RS-триггера:<br><br>
-<center>
-<table align=center>
-<td valign=top>
-<A HREF="JavaScript: if (num2>0) { num2=num2-1}; a2()">
-<img src="L.jpg"></A></td>
-
-<td>
-<div align="center">
-<A HREF="JavaScript: if (num2<gran2) { num2=num2+1}; a2()">
-<IMG SRC="slider2/0.jpg" NAME="pic2" BORDER=1 ></a>
-<br>
-</div>
-</td>
-
-<td valign=top>
-<A HREF="JavaScript: if (num2<gran2) { num2=num2+1}; a2()">
-<img src="R.jpg"></A></td>
-
-</td>
-</table>
-<font face="comic sans ms" size=+3 color=purple><b>
-<hr color=red>
-
-Теперь разберем непосредственно<br>
-работу синхронного RS-триггера на логических<br>
-элементах "И-НЕ"<br>
-<center>
-
-<table align=center>
-<td valign=top>
-<A HREF="JavaScript: if (num3>0) { num3=num3-1}; a3()">
-<img src="L.jpg"></A></td>
-
-<td>
-<div align="center">
-<A HREF="JavaScript: if (num3<gran3) { num3=num3+1}; a3()">
-<IMG SRC="slider3/0.jpg" NAME="pic3" BORDER=1 ></a>
-<br>
-</div>
-</td>
-
-<td valign=top>
-<A HREF="JavaScript: if (num3<gran3) { num3=num3+1}; a3()">
-<img src="R.jpg"></A></td>
-
-</td>
-</table>
-
-</font>
-<center>
-<font face="comic sans ms" size=+3 color=darkblue><b>
-<u>В задаче №1 пункта c) главное:</u><center>
-<font face="comic sans ms" size=+3 color=red><b> 
-Проверить работу асинхронного RS-триггера на <a href="javascript: vv5()" > 
-микросхеме JK (доп.окно)</a><br><br></font>
-<font face="comic sans ms" size=+3 color=red><b> 
-Для решения данной задачи</font> проинвертируем R и S и направим их на инверсные асинхронные входы установки и сброса триггера,<br>
-которые имеют приоритетное значение.<br> На остальные входы будем подавать сигнал 1.<br>
-<IMG SRC="rs-jk.jpg" width="400" ALIGN="center"><br>
-В результате построения на TINA мы должны получить ту же таблицу состояний, которой 
-описывается работа асинхронного RS-триггера на логических элементах ИЛИ-НЕ, за исключением 
-режима R=S=1.<br><br>При R=S=1 мы ожидаем получить режим Т-триггера.<br>
-<font face="comic sans ms" size=+3 color=blue><b>
-<center>
-ИТАК для решения задачи №1 пункта c) будем придерживаться следующего плана:<br>
-<font face="comic sans ms" size=+3 color=purple><b>
-Этапы построения:<br>
-   <center>
-   
-   <table align=center>
-<td valign=top>
-<A HREF="JavaScript: if (num4>0) { num4=num4-1}; a4()">
-<img src="L.jpg"></A></td>
-
-<td>
-<div align="center">
-<A HREF="JavaScript: if (num4<gran4) { num4=num4+1}; a4()">
-<IMG SRC="slider4/0.jpg" NAME="pic4" BORDER=1 ></a>
-<br>
-</div>
-</td>
-
-<td valign=top>
-<A HREF="JavaScript: if (num4<gran4) { num4=num4+1}; a4()">
-<img src="R.jpg"></A></td>
-
-</td>
-</table> 
-
-<font face="comic sans ms" size=+3 color=purple><b>
-<hr color=red>
-Теперь разберем непосредственно<br>
-построение и работу асинхронного RS-триггера на микросхеме JK<br>
-<center>
-
-<table align=center>
-<td valign=top>
-<A HREF="JavaScript: if (num5>0) { num5=num5-1}; a5()">
-<img src="L.jpg"></A></td>
-
-<td>
-<div align="center">
-<A HREF="JavaScript: if (num5<gran5) { num5=num5+1}; a5()">
-<IMG SRC="slider5/0.jpg" NAME="pic5" BORDER=1 ></a>
-<br>
-</div>
-</td>
-
-<td valign=top>
-<A HREF="JavaScript: if (num5<gran5) { num5=num5+1}; a5()">
-<img src="R.jpg"></A></td>
 
 </td>
 </table>
