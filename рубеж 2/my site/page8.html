@@ -1,18 +1,32 @@
 <html>
+<style type="text/css">
+<!--
+a {color: darkblue; font-size: 24; font-weight: ; left: 10px}
+a:hover {color: red; font-size: 24; font-weight: ; left: 10px}
+-->
+</style>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1251">
 <script language="JavaScript">
+
 
 var photos=new Array()
 var photoslink=new Array()
 var which=0
 
-photos[0]="N-rs6.jpg";
-photos[1]="N-rs7.jpg";
-photos[2]="N-D.jpg"
-photos[3]="N-D1.jpg"
-photos[4]="N-D2.jpg"
-photos[5]="N-D3.jpg"
+photos[0]="vicschetchik.jpg"
+photos[1]="vicschetchik1.jpg"
+photos[2]="vicschetchik2.jpg"
+photos[3]="vicschetchik3.jpg"
+photos[4]="schitchik6.jpg"
+photos[5]="vicschetchik4.jpg"
+photos[6]="N-rs6.jpg"
+photos[7]="vicschetchik6.jpg"
+photos[8]="vicschetchik7.jpg"
+photos[9]="vicschetchik8.jpg"
+photos[10]="vicschetchik9.jpg"
+photos[11]="vicschetchik10.jpg"
+photos[12]="vicschetchik11.jpg"
 
 
 var linkornot=0
@@ -23,6 +37,14 @@ photoslink[2]=""
 photoslink[3]=""
 photoslink[4]=""
 photoslink[5]=""
+photoslink[6]=""
+photoslink[7]=""
+photoslink[8]=""
+photoslink[9]=""
+photoslink[10]=""
+photoslink[11]=""
+photoslink[12]=""
+
 
 
 var preloadedimages=new Array()
@@ -149,28 +171,21 @@ function a7()
 </font>
 <center>
 <font face="comic sans ms" size=+3 color=darkblue><b>
-<u>В задаче №2 пункта:</u><center>
+<u>В задаче №2 главное</u><center>
 <font face="comic sans ms" size=+3 color=red><b> 
-Проверить работу 4-х разрядного вычитающего двоичного счетчика<br><br></font>
-<a href="javascript: vv8()" > 
-D-триггер (доп.окно)</a> на логических элементах И-НЕ<br>
-<font face="comic sans ms" size=+3 color=darkblue><b><hr color=red> 
-D-триггер — это синхронный триггер, который задерживает поступающую на его вход информацию до прихода очередного синхронизирующего импульса.<br> <hr color=red>
-<IMG SRC="d-nand.jpg" width="400" ALIGN="center"><br>
-<font face="comic sans ms" size=+3 color=red><b> 
+Проверить работу 4-х разрядного вычитающего двоичного счетчика на T-триггерах<br><br></font>
 Для решения данной задачи</font><p align=left> 
-<font face="comic sans ms" size=+3 color=darkblue><b> 
-1)Построим в среде TINA D-триггер на <a href="javascript: vv4()" > 
-элементах И-НЕ (доп.окно)</a>.<br>
-2)В результате построения триггера в TINA будем ожидать получить таблицу состояний триггера.<br>
-<center>
-Q(t) - состояние триггера до поступления управляющих сигналов (изменения на входах D и C);<br> 
-Q(t+1) - состояние триггера после изменения на входах D и C.<br> 
-</center>
-<IMG SRC="table-d.jpg" ALIGN="center"><br>
 <font face="comic sans ms" size=+3 color=blue><b>
+
+1)Для понимания работы счетчика вспомним 
+<a href="javascript: vv3()"> 
+Работу Т-триггера на микросхеме JK (доп.окно)</a></font><br>
+<font face="comic sans ms" size=+3 color=blue><b>
+2)Заметим, что обратный счетчик отличается от суммирующего тем, что счетный вход каждого последующего триггера соединяется с инверсным, а не прямым выходом предыдущего<br>
+
+<font face="comic sans ms" size=+3 color=darkblue><b>
 <center>
-ИТАК для решения задачи №2 пункта a) будем придерживаться следующего плана:<br>
+ИТАК для решения задачи №2 будем придерживаться следующего плана:<br>
 <font face="comic sans ms" size=+3 color=purple><b>
 Этапы построения: <br>
 <font face="comic sans ms" size=+1 color=blue>
@@ -199,7 +214,7 @@ document.write('</a>')
 <font face="comic sans ms" size=+3 color=purple><b>
 <hr color=red>
 Теперь разберем непосредственно<br>
-работу D-триггера на элементах И-НЕ<br>
+работу вычитающего счетчика<br>
 <center>
 <table align=center>
 <td valign=top>
