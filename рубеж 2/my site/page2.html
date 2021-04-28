@@ -11,6 +11,13 @@ a:hover {color: red; font-size: 24; font-weight: ; left: 10px}
 <meta http-equiv="content-type" content="text/html; charset=windows-1251">
 <SCRIPT language="javaScript">
 <!--
+function vv4()
+{window.open('vv4.html','dd','scrollbars=yes,toolbar=no,status=no,width=50,height=100,resizable=1,top=70,left=100');
+}
+//-->
+</SCRIPT>
+<SCRIPT language="javaScript">
+<!--
 function vv5()
 {window.open('vv5.html','dd','scrollbars=yes,toolbar=no,status=no,width=50,height=100,resizable=1,top=70,left=100');
 }
@@ -32,8 +39,8 @@ function vv7()
 </SCRIPT>
 <SCRIPT language="javaScript">
 <!--
-function vv4()
-{window.open('vv4.html','dd','scrollbars=yes,toolbar=no,status=no,width=50,height=100,resizable=1,top=70,left=100');
+function vv8()
+{window.open('vv8.html','dd','scrollbars=yes,toolbar=no,status=no,width=50,height=100,resizable=1,top=70,left=100');
 }
 //-->
 </SCRIPT>
@@ -96,29 +103,18 @@ function a5()
 //-->  
 </script>
 
-
-
-<table width=100% align-center border=0>
-<center>
-<font face="comic sans ms" size=+4 color=darkblue><b>
-Задание №1<br><hr color=red><small><small><small>
-</font>
-<center>
-<font face="comic sans ms" size=+3 color=darkblue><b>
-<u>В задаче №1 главное:</u><center>
-<font face="comic sans ms" size=+3 color=red><b> 
-Проверить работу простейшего 4-х разрядного суммирующего двоичного счетчика импульсов на T-триггерах;
 <script language="JavaScript">
 var photos=new Array()
 var photoslink=new Array()
 var which=0
 
-photos[0]="schitchik2.jpg"
-photos[1]="schitchik3.jpg"
-photos[2]="schitchik4.jpg"
-photos[3]="schitchik5.jpg"
-photos[4]="schitchik6.jpg"
-photos[5]="schitchik7.jpg"
+
+photos[0]="schitchik3.jpg"
+photos[1]="schitchik4.jpg"
+photos[2]="schitchik5.jpg"
+photos[3]="schitchik6.jpg"
+photos[4]="schitchik7.jpg"
+photos[5]="schitchik2.jpg"
 photos[6]="N-rs6.jpg"
 photos[7]="schitchik9.jpg"
 photos[8]="schitchik10.jpg"
@@ -200,41 +196,34 @@ window.location=photoslink[which]
 
 </script>
 
-
 <body background="back1.gif">
-<br>
 <center>
-<font face="comic sans ms" size=+3 color=darkblue><b> 
-<a href="javascript: vv6()" > 
-4-х разрядного суммирующего двоичного счетчика</a> на T-триггерах<br><br>
+<font face="comic sans ms" size=+4 color=darkblue><b>
+Задание №1<br><hr color=red><small><small><small>
+</font>
+<center>
+<font face="comic sans ms" size=+3 color=darkblue><b>
+<u>В задаче №1 главное:</u><center>
+<font face="comic sans ms" size=+3 color=red><b> 
+Проверить работу простейшего 
 
-<font face="comic sans ms" size=+3 color=blue><b>
-<center>
-ИТАК для решения задачи №1 будем придерживаться следующего плана:<br>
+<font face="comic sans ms" size=+3 color=red><b> 
+<a href="javascript: vv4()" > 
+4-х разрядного суммирующего двоичного счетчика</a> на T-триггерах в "TINA"
+
 <p align=left>
 <font face="comic sans ms" size=+3 color=darkblue>
-1)Для понимания работы счетчика вспомним 
-<a href="javascript: vv3()" > 
-Работу Т-триггера на микросхеме JK (доп.окно)</a></font><br>
-<SCRIPT language="javaScript">
+1)Вспомним 
+<a href="javascript: vv8()" > 
+работу Т-триггера на микросхеме JK </a></font><br>
 
-function vv()
-{window.open('OR-NO.html','dd','scrollbars=yes,toolbar=no,status=no,width=50,height=100,resizable=1,top=70,left=100');
-}
-
-</SCRIPT>
-</font>
 <font face="comic sans ms" size=+3 color=darkblue><b> 
-2)В результате построения 4-х разрядного двоичного счетчика на компьютерной модели "TINA" будем ожидать получение таблицы состояний счетчика и соответствующие преобразованние
-его двоичного числа в 7-сигментное изображение десятичного эквивалента.<br> <br>
-<font face="comic sans ms" size=+1 color=blue><b>
-<center>
-<IMG SRC="schitchik1.jpg" width=70% ALIGN="center"><br><br>
-</font>
-3)Воспользуемся компьютерной моделью "TINA", которая поможет наглядно проиллюстрировать работу 4-х разрядного двоичного счетчика импульсов<br>
+2)В результате построения 4-х разрядного двоичного счетчика на компьютерной модели "TINA" ожидаем получить устройство для подсчета импульсов, которое с поступлением
+каждого импульса меняет свое состояние на единицу
+
 <center>
 <font face="comic sans ms" size=+3 color=purple><b>
-Этапы построения счетчика на Т-триггерах:<br>
+Этапы решения:<br>
 <font face="comic sans ms" size=+1 color=blue>
 (листайте слайды)</font>
 <table border="0" cellspacing="0" cellpadding="0" align=center>
