@@ -16,19 +16,21 @@ var photos=new Array()
 var photoslink=new Array()
 var which=0
 
-photos[0]="desh0.jpg"
-photos[1]="desh1.jpg"
-photos[2]="desh2.jpg"
-photos[3]="desh3.jpg"
-photos[4]="desh4.jpg"
-photos[5]="desh5.jpg"
-photos[6]="desh6.jpg"
-photos[7]="desh7.jpg"
-photos[8]="desh8.jpg"
-photos[9]="desh9.jpg"
-photos[10]="desh10.jpg"
+photos[0]="desh1.jpg"
+photos[1]="desh2.jpg"
+photos[2]="desh3.jpg"
+photos[3]="desh4.jpg"
+photos[4]="desh5.jpg"
+photos[5]="desh6.jpg"
+photos[6]="desh7.jpg"
+photos[7]="deshif1.jpg"
+photos[8]="deshif2.jpg"
+photos[9]="deshif3.jpg"
+photos[10]="deshif4.jpg"
+photos[11]="deshif5.jpg"
+photos[12]="deshif6.jpg"
+photos[13]="deshif7.jpg"
 
-var linkornot=0
 
 var linkornot=0
 
@@ -43,8 +45,9 @@ photoslink[7]=""
 photoslink[8]=""
 photoslink[9]=""
 photoslink[10]=""
-
-
+photoslink[11]=""
+photoslink[12]=""
+photoslink[13]=""
 
 var preloadedimages=new Array()
 for (i=0;i<photos.length;i++){
@@ -99,15 +102,6 @@ window.location=photoslink[which]
 
 </script>
 
-<script language="JavaScript">
-<!--    
-var num9 = 0  
-gran9 = 4   
-function a9()  
-//{ alert( num9 );
-{ document.pic9.src="slider9/"+ num9 +".jpg" ;} 
-//-->  
-</script>
 
 </head>
 <style type="text/css">
@@ -128,12 +122,13 @@ a:hover {color: red; font-size: 24; font-weight: ; left: 10px}
 <center>
 <font face="comic sans ms" size=+3 color=darkblue><b>
 <u>В задаче №3 главное:</u><center><font face="comic sans ms" size=+3 color=red><b> 
-Проверить работу простейшего дешифратора.<br>
+Проверить работу простейшего дешифратора в "TINA".<br>
 <font face="comic sans ms" size=+3 color=darkblue><b>
 <center>
-ИТАК для решения задачи №3 будем придерживаться следующего плана:<br>
+В результате построения простейшего дешифратора мы ожидаем получить схему включения одной из трех ламп в зависимости от кода,
+сформированного на счетчике<br>
 <font face="comic sans ms" size=+3 color=purple><b><center>
-Этапы построения<br>
+Этапы решения<br>
 <font face="comic sans ms" size=+1 color=blue><center>
 (листайте слайды)</font>
 <table border="0" cellspacing="0" cellpadding="0" align=center>
@@ -142,7 +137,7 @@ a:hover {color: red; font-size: 24; font-weight: ; left: 10px}
 <script>
 if (linkornot==1)
 document.write('<a href="javascript:transport()">')
-document.write('<img src="'+photos[0]+'" name="photoslider" style="filter:revealTrans(duration=2,transition=23)" border=0>')
+document.write('<img src="'+photos[0]+'" name="photoslider" width=750 height=400 style="filter:revealTrans(duration=2,transition=23)" border=0>')
 if (linkornot==1)
 document.write('</a>')
 </script>
@@ -157,6 +152,9 @@ document.write('</a>')
   </tr>
 </table>
 
+
+<br>
+<br>
 </td>
 </table> 
 
